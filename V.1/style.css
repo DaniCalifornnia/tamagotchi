@@ -1,79 +1,69 @@
 *{box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-body {
-  position:absolute;
-  width:100%;
-  overflow-y:hidden;
-  top:0;
-  bottom:0;
-}
-
-.pet{
-  border-radius: 10px;
-  width: 20%;
-  height: 5%;  
-}
-
-.container{
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-    padding: 30px 60px 30px;
+body{
+    overflow: hidden;
+  }
+  
+  .pet{
     border-radius: 10px;
-}
+    width: 10%;
+    height: 10%;
+  }
+  
+  .cat{
+    width: 400px;
+  }
 
-.button{
-    padding: 4%;
+  h2 {
+   color:  rgb(255, 16, 227);
+  }
+  
+  .button{
+    padding: 6px 50px;
     background: lightpink;
-    color: rgb(96, 7, 85);
-    cursor:grabbing;
-    min-width: 82px;
-    min-height: 38px;
+    color: rgb(198, 30, 178);
     border-radius: 4px;
-}
-
-.button:hover{
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover{
     background: pink;
-}
-
-.button:active{
-    background: lightcoral;
-}
-
-.barra{
-    width: 20%;
-    background: lightpink;
-    margin: 3px;
-    padding: 1%;
-}
-
-.Status{
-    float:inline-start;
+  }
+  
+  .button:active{
+    background: rgb(96, 7, 85);
+    color: aliceblue;
+  }
+  
+  .barra{
+    width: 100px;
+    background: #a4e2e3;
+    margin: 5px 10px;
+    border-radius:4px;
+    padding: 3px 3px;
+  }
+  
+  .lado{
+    float:left;
     margin: 10px 25px;
     width: 120px;
-}
-
-#catbutton{
-    padding: 8%;
-    color: black;
-    position: relative;
-    font-size: medium;
-    color: rgb(96, 7, 85);
-    
-}
-
-#catimagen{
+  }
+  
+  #catbutton{
+    padding: 115px 0px;
+  }
+  
+  #catimage{
     padding: 0px 0px;
     position: relative;
-    left: 5%;
-    top: 7%;
-}
-
-#message{
-    color:grey;
-}
+    left:200px;
+    top: 100px;
+  }
+  
+  #message{
+    color: rgb(255, 0, 115);
+  }
 
