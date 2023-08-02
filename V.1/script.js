@@ -13,7 +13,7 @@ function Loop(time = 2){
 
   if(life <= 0 || clean <= 0 || sleep <= 0 || fun <= 0 || social <= 0){
      document.getElementById("pet").src="/Art/Cat1.png";
-     document.getElementById('message').innerHTML = 'Meow Died, pls restart';
+     document.getElementById('message').innerHTML = 'Meow Died, pls refresh';
   }
   else if(total > 400){
      document.getElementById("pet").src="/Art/Cat0.png";
