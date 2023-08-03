@@ -1,10 +1,20 @@
-*{box-sizing: border-box;
-    font-family: "Plus Jakarta Sans", sans-serif;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-body{
-    overflow: hidden;
-  }
+.list{
+
+
+}
+
+.space {
+  width: 4px;
+  height: auto;
+  display: inline-block;
+}
   
 .pet{
     border-radius: 10px;
@@ -17,6 +27,7 @@ body{
   }
 
 h2 {
+   font-family: 'Common Pixel', sans-serif;
     color:  rgb(215, 114, 203);
     border-bottom: 1px solid #aaa;
     margin: 15px 0;
@@ -24,55 +35,120 @@ h2 {
     position: relative;
   }
   
-.button{
-    padding: 6px 50px;
-    background: lightpink;
-    color: rgb(198, 30, 178);
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(255, 182, 253)), color-stop(1, rgb(253, 171, 250)) );
-    box-shadow: inset 0px 1px 0px #ed7ff1, 0px 1px 0px #fff;
-    border-radius: 5px;
+  :root {
+    --backgroundColor: rgba(246, 241, 209);
+    --colorShadeA: rgb(161, 106, 163);
+    --colorShadeB: rgb(182, 121, 186);
+    --colorShadeC: rgb(224, 150, 232);
+    --colorShadeD: rgb(223, 187, 232);
+    --colorShadeE: rgb(251, 148, 254);
   }
-  
-  .button:hover{
-    background: rgb(249, 143, 219);
-  }
-  
-  .button:active{
-    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(253, 144, 249)), color-stop(1, rgb(253, 128, 249)) );
-    box-shadow: inset 0px 1px 0px #f773fb, 0px 1px 0px #fff;
-    border-radius: 5px;
-    color: aliceblue;
-  }
-  
-  .barra{
-    width: 100px;
+
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "OpenSans", sans-serif;
+  font-size: 1rem;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background: var(--backgroundColor);
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--colorShadeA);
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
+span.button {
+  padding: 1px 8px;
+  border: 2px solid var(--colorShadeA);
+  border-radius: 9px;
+  background: var(--colorShadeE);
+  transform-style: preserve-3d;
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+span.button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--colorShadeC);
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
+  transform: translate3d(0, 0.75em, -1em);
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+span.button:hover {
+  background: var(--colorShadeD);
+  transform: translate(0, 0.375em);
+}
+
+span.button:hover::before {
+  transform: translate3d(0, 0.75em, -1em);
+}
+
+span.button:active {
+  transform: translate(0em, 0.75em);
+}
+
+span.button:active::before {
+  transform: translate3d(0, 0, -1em);
+
+  box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+}
+
+.barra{
+    box-shadow: inset 0px 1px 0px #39919d, 0px 1px 0px #fff;
+    height: 20px;
     background: #a4e2e3;
-    margin: 5px 10px;
-    border-radius:4px;
+    border-radius:5px;
     padding: 3px 3px;
+    margin: 5px 10px;
   }
   
-  .lado{
+.lado{
     float:left;
     margin: 10px 25px;
     width: 120px;
   }
   
-  #catbutton{
+#catbutton{
     padding: 115px 0px;
   }
   
-  #catimage{
+#catimage{
     padding: 0px 0px;
     position: relative;
     left:200px;
     top: 100px;
   }
   
-  #message{
+#message{
     color: rgb(255, 0, 115);
   }
 
