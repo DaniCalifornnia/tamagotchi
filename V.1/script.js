@@ -12,23 +12,23 @@ function Loop(time = 2){
 
 
   if(life <= 0 || clean <= 0 || sleep <= 0 || fun <= 0 || social <= 0){
-     document.getElementById("pet").src="/Art/Cat1.png";
+     document.getElementById("pet").src="./Art/Cat1.png";
      document.getElementById('message').innerHTML = 'Meow Died, pls refresh';
   }
   else if(total > 400){
-     document.getElementById("pet").src="/Art/Cat0.png";
+     document.getElementById("pet").src="./Art/Cat0.png";
   }
   else if(total > 300){
-     document.getElementById("pet").src="/Art/Cat0.png";
+     document.getElementById("pet").src="./Art/Cat0.png";
   }
   else if(total > 200){
-     document.getElementById("pet").src="/Art/Cat2.png";
+     document.getElementById("pet").src="./Art/Cat2.png";
   }
   else if(total > 100){
-     document.getElementById("pet").src="/Art/Cat3.png";
+     document.getElementById("pet").src="./Art/Cat3.png";
   }
   else if(total > 50){
-     document.getElementById("pet").src="/Art/Cat1.png";
+     document.getElementById("pet").src="./Art/Cat1.png";
   }
 
   life = life - parseInt(time);
